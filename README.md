@@ -4,6 +4,7 @@
 ### Git Tutorials
 
 - Code School: https://try.github.io/levels/1/challenges/1 (Free)
+- Git Book: http://git-scm.com/ (Free)
 - Code School: https://www.codeschool.com/courses/git-real (Paid)
 
 
