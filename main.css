@@ -1,0 +1,9 @@
+body {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+pre {
+    background-color: #F1F1F1;
+    padding: 2em;
+}

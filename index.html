@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <script src="jquery-2.1.1.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="normalize.css"/>
+  <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
+  <link type="text/css" rel="stylesheet" href="main.css"/>
+  <title></title>
+</head>
+<body>
+<article>
+  <section>
+    <h1>JavaScript Intro</h1>
+    <hr/>
+  </section>
+  <section class="sample-01">
+    <h2>Sample Function</h2>
+    <pre>
+      <code class="sample-code">
+var my_function = function() {
+  var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return "Result: " + sum;
+};
+      </code>
+    </pre>
+
+    <pre><code class="output"></code></pre>
+  </section>
+
+  <section class="sample-02">
+    <h2>Interacting With The DOM</h2>
+    <pre><code class="sample-code">
+$('.sample-02 .output').css('border', '2px solid blue');
+    </code></pre>
+    <pre class="output"><code>
+&lt;section class="sample-02"&gt;
+  &lt;pre&gt;
+    &lt;code class="output"&gt;
+      My code
+    &lt;/code&gt;
+  &lt;/pre&gt;
+&lt;/section&gt;
+    </code></pre>
+  </section>
+
+  <section class="sample-03">
+    <h2>Action Listeners</h2>
+    <pre><code class="sample-code">
+$('.sample-03 .output').html(
+  'Click count: &lt;span class="counter-div"&gt;0&lt;/span&gt;');
+
+$('.sample-03 .my-button').on('click', increase_counter);
+
+counter = 0;
+
+increase_counter = function() {
+  counter++;
+  $('.sample-03 .output .counter-div').html(counter);
+};
+    </code></pre>
+
+    <button class="my-button" type="button">Click Me!</button>
+    <pre><code class="output"></code></pre>
+  </section>
+  <script src="basic.js"></script>
+</article>
+
+</body>
+</html>
